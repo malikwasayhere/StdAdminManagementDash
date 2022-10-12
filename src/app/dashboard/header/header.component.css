@@ -5,8 +5,6 @@
 mat-toolbar {
     background-image: linear-gradient(to right, #EBECF0, #56F8C2);
     height: 13vh;
-    border: 3px solid #56F8C2;
-    border-style: ridge;
 }
 
 .upperheading {

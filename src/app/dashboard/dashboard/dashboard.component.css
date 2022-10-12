@@ -10,8 +10,6 @@ mat-drawer-container {
 mat-drawer {
     width: 6rem;
     background-image: linear-gradient( #EBECF0, #88E8F4);
-    border: 3px solid #568CF8;
-    border-style: ridge;
 }
 
 .main-content {
