@@ -1,0 +1,18 @@
+.academicheading {
+    display: inline-flex;
+    color: #FFB6C1;
+    font-family: Signika, sans-serif;
+}
+
+mat-card {
+    background-color: grey;
+    color: white;
+}
+
+mat-label {
+    color: white;
+}
+
+mat-form-field {
+    color: white;
+}

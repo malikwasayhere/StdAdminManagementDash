@@ -1,0 +1,18 @@
+<!-------------------------------- TOOLBAR SECTION START ------------------------------------------>
+
+
+<mat-toolbar>
+    <img class="logobrand" src="assets/img/pngegg.png">
+    <span class="upperheading">STUDENT MANAGEMENT SYSTEM</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button class="profileicon" [matMenuTriggerFor]="beforeMenu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <mat-menu #beforeMenu="matMenu" xPosition="before">
+        <button mat-menu-item>Profile</button>
+        <button mat-menu-item>Settings</button>
+        <button mat-menu-item>Logout</button>
+    </mat-menu>
+</mat-toolbar>
+
+<!-------------------------------- TOOLBAR SECTION END ------------------------------------------>

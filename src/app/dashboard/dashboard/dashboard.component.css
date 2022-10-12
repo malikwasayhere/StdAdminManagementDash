@@ -1,0 +1,44 @@
+html {
+    font-size: 62.75%;
+}
+
+mat-drawer-container {
+    height: 100vh;
+    background-image: linear-gradient(to right, #EBECF0, #EBECF0, #708090);
+}
+
+mat-drawer {
+    width: 6rem;
+    background-image: linear-gradient( #EBECF0, #88E8F4);
+    border: 3px solid #568CF8;
+    border-style: ridge;
+}
+
+.main-content {
+    background-image: linear-gradient(to right, #EBECF0, #EBECF0, #708090);
+    height: 100vh;
+    margin: 0.7rem;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.addstp {
+    background-color: transparent;
+    height: 4rem;
+    width: 3rem;
+    display: grid;
+    place-items: center;
+    color: grey;
+    display: inline-block;
+    justify-content: center;
+    margin: auto;
+    border: 3px solid #568CF8;
+    flex: auto;
+    margin-top: 0.6rem;
+    border-radius: 20%;
+    display: block;
+}
+
+.addstp:focus {
+    background-color: white;
+    color: #495057;
+}
