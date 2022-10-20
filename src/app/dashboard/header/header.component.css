@@ -3,13 +3,13 @@
 }
 
 mat-toolbar {
-    background-image: linear-gradient(to right, #EBECF0, #56F8C2);
+    background-color: #568CF8;
     height: 13vh;
 }
 
 .upperheading {
     font-family: cursive;
-    color: #495057;
+    color: white;
     font-weight: 700;
     font-size: x-large;
 }
@@ -23,5 +23,5 @@ mat-toolbar {
     margin-left: 30px;
     margin-right: 30px;
     background-color: transparent;
-    border: 3px solid green;
+    border: 3px solid white;
 }

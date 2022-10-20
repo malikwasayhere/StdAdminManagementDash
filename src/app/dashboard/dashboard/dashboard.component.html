@@ -125,40 +125,45 @@
           <mat-icon class="addrecord">credit_card</mat-icon>
         </button>
         <mat-menu #cardmenu="matMenu">
-            <button mat-menu-item>
+            <button mat-menu-item routerLink="idcardtemp">
             <mat-icon>play_arrow</mat-icon>
             <span>Id Card Template</span>
           </button>
-            <button mat-menu-item>
+            <button mat-menu-item routerLink="studentidcard">
             <mat-icon>play_arrow</mat-icon>
             <span>Student Id Card</span>
           </button>
-            <button mat-menu-item>
+            <button mat-menu-item routerLink="employeeidcard">
             <mat-icon>play_arrow</mat-icon>
             <span>Employee Id Card</span>
           </button>
-            <button mat-menu-item>
+            <button mat-menu-item routerLink="admitcardtemplate">
             <mat-icon>play_arrow</mat-icon>
             <span>Admit Card Template</span>
           </button>
-            <button mat-menu-item>
+            <button mat-menu-item routerLink="generateadmitcard">
             <mat-icon>play_arrow</mat-icon>
             <span>Generate Admit Card</span>
           </button>
         </mat-menu>
+        <!----------------------------------------------------------------------------------------------->
+        <!--================================CERTIFICATE MENU===========================================-->
+        <!----------------------------------------------------------------------------------------------->
+
+
         <button mat-raised-button class="addstp" [matMenuTriggerFor]="certificatemenu" aria-label="Example icon-button with a menu">
           <mat-icon class="addrecord">description</mat-icon>
         </button>
         <mat-menu #certificatemenu="matMenu">
-            <button mat-menu-item>
+            <button mat-menu-item routerLink="certificatetemplate">
             <mat-icon>play_arrow</mat-icon>
             <span>Certificate Template</span>
           </button>
-            <button mat-menu-item>
+            <button mat-menu-item routerLink="genstudentcertificate">
             <mat-icon>play_arrow</mat-icon>
             <span>Generate Student</span>
           </button>
-            <button mat-menu-item>
+            <button mat-menu-item routerLink="genemployeecertificate">
             <mat-icon>play_arrow</mat-icon>
             <span>Generate Employee</span>
           </button>

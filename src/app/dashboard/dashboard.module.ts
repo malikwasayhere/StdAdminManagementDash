@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
@@ -32,7 +33,14 @@ import { AddemployeeComponent } from './dashboard/components/addemployee/addempl
 import { EmplogindeactiveComponent } from './dashboard/components/emplogindeactive/emplogindeactive.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
-
+import { IdcardtemplateComponent } from './dashboard/components/idcardtemplate/idcardtemplate.component';
+import { StudentidcardComponent } from './dashboard/components/studentidcard/studentidcard.component';
+import { EmployeeidcardComponent } from './dashboard/components/employeeidcard/employeeidcard.component';
+import { AdmitcardtemplateComponent } from './dashboard/components/admitcardtemplate/admitcardtemplate.component';
+import { GenerateadmitcardComponent } from './dashboard/components/generateadmitcard/generateadmitcard.component';
+import { CertificatetemplateComponent } from './dashboard/components/certificatetemplate/certificatetemplate.component';
+import { GeneratestudentComponent } from './dashboard/components/generatestudent/generatestudent.component';
+import { GenerateemployeeComponent } from './dashboard/components/generateemployee/generateemployee.component';
 
 
 const routes: Routes = [
@@ -95,7 +103,39 @@ const routes: Routes = [
       {
         path: "emplogdeactive",
         component: EmplogindeactiveComponent,
-      }
+      },
+      {
+        path: "idcardtemp",
+        component: IdcardtemplateComponent,
+      },
+      {
+        path: "studentidcard",
+        component: StudentidcardComponent,
+      },
+      {
+        path: "employeeidcard",
+        component: EmployeeidcardComponent,
+      },
+      {
+        path: "admitcardtemplate",
+        component: AdmitcardtemplateComponent,
+      },
+      {
+        path: "generateadmitcard",
+        component: GenerateadmitcardComponent,
+      },
+      {
+        path: "certificatetemplate",
+        component: CertificatetemplateComponent,
+      },
+      {
+        path: "genstudentcertificate",
+        component: GeneratestudentComponent,
+      },
+      {
+        path: "genemployeecertificate",
+        component: GenerateemployeeComponent,
+      },
     ],
   },
 ]
@@ -118,6 +158,14 @@ const routes: Routes = [
     AdddesignationComponent,
     AddemployeeComponent,
     EmplogindeactiveComponent,
+    IdcardtemplateComponent,
+    StudentidcardComponent,
+    EmployeeidcardComponent,
+    AdmitcardtemplateComponent,
+    GenerateadmitcardComponent,
+    CertificatetemplateComponent,
+    GeneratestudentComponent,
+    GenerateemployeeComponent
   ],
   imports: [
     CommonModule,
@@ -125,7 +173,7 @@ const routes: Routes = [
     MatButtonModule, MatSidenavModule, MatListModule, MatCardModule,
     MatInputModule, MatTableModule, MatSelectModule, MatTreeModule,
     MatMenuModule, MatTabsModule, MatDatepickerModule, MatNativeDateModule,
-    MatBottomSheetModule
+    MatBottomSheetModule, MatCheckboxModule
   ]
 })
 export class DashboardModule { }

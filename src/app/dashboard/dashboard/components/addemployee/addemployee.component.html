@@ -1,1 +1,236 @@
-<p>addemployee works!</p>
+<mat-card>
+    <h2 class="academicheading">
+        <span>ACADEMIC DETAILS</span>
+    </h2>
+    <form class="example-form">
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="demo-full-width" appearance="fill">
+                        <mat-label>Designation</mat-label>
+                        <select matNativeControl>
+                  <option value=""></option>
+                  <option selected>Manager</option>
+                  <option>Science Teacher</option>
+                  <option>Physics Teacher</option>
+                  <option>Computer Teacher</option>
+                </select>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Role</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Joining Date</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Qualification</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Experience Details</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Total Experience</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+
+
+        <h2 class="academicheading">
+            <span>PERSONAL DETAILS</span>
+        </h2>
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="demo-full-width" appearance="fill">
+                        <mat-label>Gender</mat-label>
+                        <select matNativeControl>
+                <option value=""></option>
+                <option selected>Male</option>
+                <option>Female</option>
+              </select>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Date of Birth</mat-label>
+                        <input matInput [matDatepicker]="picker">
+                        <mat-hint>MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="demo-full-width" appearance="fill">
+                        <mat-label>Blood Group</mat-label>
+                        <select matNativeControl>
+                              <option value=""></option >
+                              <option selected>Select Blood Group</option>
+                              <option>A+</option>
+                              <option>B+</option>
+                              <option>A-</option>
+                              <option>B-</option>
+                              <option>AB+</option>
+                              <option>AB-</option>
+                              <option>O+</option>
+                              <option>O-</option>
+                          </select>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Religion</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Phone No</mat-label>
+                        <span matPrefix>+92 &nbsp;</span>
+                        <input type="tel" matInput placeholder="XXX-XXXXXXX">
+                        <mat-icon matSuffix>mode_edit</mat-icon>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput placeholder="Ex. pat@example.com">
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <p>
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Present Address</mat-label>
+                            <textarea matInput></textarea>
+                        </mat-form-field>
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Permanent Address</mat-label>
+                            <textarea matInput></textarea>
+                        </mat-form-field>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="academicheading">
+            <span>LOGIN DETAILS</span>
+        </h2>
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Username</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Password</mat-label>
+                        <input matInput type="password">
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Re-Type Password</mat-label>
+                        <input matInput type="password">
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+
+
+        <h2 class="academicheading">
+            <span>BANK DETAILS</span>
+        </h2>
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Bank Name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Holder Name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Bank Branch</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Bank Address</mat-label>
+                        <input matInput type="fa-address-book">
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>IFSC Code</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+                <td>
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Account Number</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </td>
+            </tr>
+        </table>
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <button mat-raised-button color="primary">Primary</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</mat-card>

@@ -4,16 +4,16 @@ html {
 
 mat-drawer-container {
     height: 100vh;
-    background-image: linear-gradient(to right, #EBECF0, #EBECF0, #708090);
+    background-color: white;
 }
 
 mat-drawer {
     width: 6rem;
-    background-image: linear-gradient( #EBECF0, #88E8F4);
+    background-color: #3D3D3D;
 }
 
 .main-content {
-    background-image: linear-gradient(to right, #EBECF0, #EBECF0, #708090);
+    background-color: #C1C1C1;
     height: 100vh;
     margin: 0.7rem;
     border-radius: 25px 25px 25px 25px;
@@ -23,9 +23,8 @@ mat-drawer {
     background-color: transparent;
     height: 4rem;
     width: 3rem;
-    display: grid;
     place-items: center;
-    color: grey;
+    color: white;
     display: inline-block;
     justify-content: center;
     margin: auto;
